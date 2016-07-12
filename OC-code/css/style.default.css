@@ -18,7 +18,7 @@ a {
 	background-size: cover;
 	box-shadow: 0 1px 5px #ccc
 }
-.no-padding-left {
+.no-padding-leftside {
 	padding-left: 0;
 }
 .no-padding-right {
@@ -733,8 +733,17 @@ a i.fa, button i.fa {
 input[type="radio"] {
 	display: none;
 }
+input[type="checkbox"] {
+	display: none;
+}
 input[type="radio"] + label {
 	color: #f6f6f6;
+	font-size: 14px !important;
+	font-weight: normal;
+	letter-spacing: 1px;
+	margin: 5px 0;
+}
+input[type="checkbox"] + label {
 	font-size: 14px !important;
 	font-weight: normal;
 	letter-spacing: 1px;
@@ -750,13 +759,43 @@ input[type="radio"] + label span {
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 }
+input[type="checkbox"] + label span {display: inline-block;
+	width: 21px;
+	height: 21px;
+	margin: -1px 8px 0 0;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
 input[type="radio"] + label span {
 	background-color: #f6f6f6;
+}
+input[type="checkbox"] + label span {
+	background-color: #fff;
+	border:2px solid #e4e8f0;
 }
 input[type="radio"]:checked + label span {
 	background-color: #7bc147;
 }
+input[type="checkbox"]:checked + label span {
+	background-color: #7bc147;
+	border:2px solid #7bc147;
+}
+input[type="checkbox"]:checked + label span:before {content:'\f00c';
+	font-family:'FontAwesome';
+	color:#fff;
+	display:inline-block;
+	margin:auto;
+	margin-left:2px;
+}
 input[type="radio"] + label span, input[type="radio"]:checked + label span {
+	-webkit-transition: background-color 0.4s linear;
+	-o-transition: background-color 0.4s linear;
+	-moz-transition: background-color 0.4s linear;
+	transition: background-color 0.4s linear;
+}
+input[type="checkbox"] + label span, input[type="checkbox"]:checked + label span {
 	-webkit-transition: background-color 0.4s linear;
 	-o-transition: background-color 0.4s linear;
 	-moz-transition: background-color 0.4s linear;
@@ -1277,10 +1316,10 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', end
 	letter-spacing: 0.5px;
 }
 .filter-search {
-	height: 50px;
-	border-radius: 3px;
-	border-color: #ccc;
-	margin-bottom: 10px;
+	height: 50px !important;
+	border-radius: 3px !important;
+	border-color: #ccc !important;
+	margin-bottom: 10px !important;
 }
 .filter-search:focus {
 	box-shadow: none;
@@ -1385,6 +1424,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', end
 .quick-view .sizes a {
 	width: 30px;
 	height: 30px;
+
+
 	border-radius: 30px;
 	line-height: 30px
 }
@@ -1987,14 +2028,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', end
 .navbar-default .navbar-link:hover {
 	color: #333
 }
-body {
- body {
-font-family: 'montserratregular';
- font-size: 14px;
- line-height: 1.42857143;
- color: #555;
- background-color: #fff
-}
+
 a {
 	color: #4fbfa8;
 	text-decoration: none
@@ -2019,7 +2053,6 @@ hr {
 }
 .breadcrumb {
 	padding: 8px 0;
-	margin-bottom: 20px;
 	background-color: #fff;
 	border-radius: 0;
 	text-align: center
@@ -2040,16 +2073,7 @@ hr {
 	text-align: center
 }
 }
-.btn {
-	font-weight: 700;
-	font-family: "Montserrat", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
-	letter-spacing: .1em;
-	padding: 6px 12px;
-	font-size: 12px;
-	line-height: 1.42857143;
-	border-radius: 0
-}
+
 .btn-primary {
 	color: #4fbfa8;
 	background-color: #fff;
@@ -2221,6 +2245,8 @@ color:#999
 	background-color: #fff;
 	border-color: #ddd
 }
+
+
 @media (max-width:767px) {
 .text-center-xs {
 	text-align: center !important
@@ -2241,40 +2267,8 @@ color:#999
 	margin-right: auto
 }
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: "Montserrat", Helvetica, Arial, sans-serif;
-	font-weight: 900;
-	line-height: 1.2;
-	color: #333;
-	text-transform: uppercase;
-	letter-spacing: .1em
-}
-h1, .h1 {
-	font-size: 36px
-}
-h2, .h2 {
-	font-size: 30px
-}
-h3, .h3 {
-	font-size: 24px;
-	font-weight: 700
-}
-h4, .h4 {
-	font-size: 18px;
-	font-weight: 700
-}
-h5, .h5 {
-	font-size: 14px;
-	font-weight: 700
-}
-h6, .h6 {
-	font-size: 12px;
-	font-weight: 700
-}
-h1, .h1, h2, .h2, h3, .h3 {
-	margin-top: 0;
-	margin-bottom: 20px
-}
+
+
 p {
 	margin: 0 0 20px
 }
@@ -2343,7 +2337,8 @@ address {
 	box-shadow: 0 0 0
 }
 .panel-default {
-	border-color: #666
+	border-color: #666;
+	border:0;
 }
 .panel-default>.panel-heading {
 	color: #333;
@@ -2461,6 +2456,7 @@ p.social a.email {
 .copyright {
 	margin-top: 60px
 }
+
 }
 
 #map {
@@ -2499,3 +2495,102 @@ p.social a.email {
 	padding-left: 15px !important;
 	padding-right: 15px !important;
 }
+
+/* start sign in up page css*/
+.nav-item.loginsignup_link .nav-link-loginlink{ float: left !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.nav-item.loginsignup_link .nav-link-signuplink{ float: left !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.signin-popup{
+	max-width:400px !important;
+}	
+.signin-popup .modal-body{padding:40px 40px 30px 40px;
+	display:inline-block;
+	width:100%;
+}
+.signin-input{border-radius:5px;
+	height:52px;
+	margin-bottom:10px;
+	letter-spacing:1px;
+}
+.signin-input:focus{box-shadow:none;
+}
+.popup-heading{text-align:center;
+	margin-bottom:20px;
+	margin-top:0;
+    font-size:16px;
+	letter-spacing:1px;
+}
+.btn-login{height:52px;
+	border-color:#7bc147;
+}
+.forgot-paslink{color:#333333;
+	letter-spacing:1px;
+}
+.forgotpass-div{text-align:center;
+	margin-top:15px;
+}
+.signin-popup-footer{background:#f1f2f2;
+	color:#7bc147;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	text-align:center;
+	letter-spacing:1px;
+	border-top:0;
+	padding:20px 15px;
+	font-size:15px;
+}
+.signin-popup-footer a{
+	color:#7bc147;
+	text-decoration:underline;
+}
+.modal-backdrop {
+    background-color: #26343a;	
+}
+.modal-backdrop.in{opacity:0.9;  
+}
+.rest-btn{font-style:italic;
+	border-color:#333333;
+	padding:8px 18px;
+	line-height:22px;
+	float:right;
+}
+.rest-btn img{float:left;
+	margin-right:5px;
+}
+.cusine-heading{font-size:22px;
+	margin-top:10px;
+}
+.filter-cuisine-popup{max-width:600px;
+}
+.filter-cuisine-popup .modal-body{display:inline-block;
+	width:100%;
+}
+.cusine-filterleftdiv{border-right:1px solid #ebebeb;
+	padding-left:25px;
+}
+.cusine-filterrighgtdiv{padding-left:35px;
+}
+.cancel-btn{border:1px solid #7bc147;
+	color:#7bc147;
+	padding:8px 25px;
+	font-weight:light;
+	text-transform:uppercase;
+	background:#F1F2F2;
+	font-size:13px;
+}
+.apply-btn{border:1px solid #7bc147;
+	color:#fff;
+	padding:8px 30px;
+	font-weight:light;
+	text-transform:uppercase;
+	background:#7bc147;
+	font-size:13px;
+}
+/*end of sign in signup page css*/
+
+
