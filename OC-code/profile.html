@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OnlineCatering</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap and Font Awesome css-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google fonts - Montserrat for headings for copy-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+    
+    <link rel="stylesheet" href="css/bootstrap-select.css" id="">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!--  for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- navbar-->
+    <header class="header">
+      <div class="topbar topbar-profile">
+        <div class="nav-div">
+        	<div class="container"> 
+              <div class="topbar__content row">
+              	<div class="navbar-header col-sm-3 navbar-left-div">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right-div col-sm-9" id="bs-example-navbar-collapse-1">
+                	<nav class="navbar navbar-light bg-faded">
+                      <ul class="nav navbar-nav pull-right right-navbar-div">
+                        <li class="nav-item active">
+                          <a class="nav-link header-phonen" href="#">1(800) 1223 3827 22</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">HOW IT WORKS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">BECOME A PARTNER</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">LOGIN/SIGNUP</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">CART <img class="header-cartimg" src="img/navcart_icon.png"></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img class="headr-flagimg" src="img/nav_flagicon.png"></a>
+                        </li>
+                      </ul>
+                    </nav>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="profile-headerdiv">
+        	<div class="container">
+            	<div class="row">
+                    <div class="col-sm-12">
+                    	<img class="restaurant-prfoileimg" src="img/profile_image.png">
+                        <div class="restaurant-details">
+                        	<h3>Cookhouse Joe Restaurant</h3>
+                            <p><i>For a smaller group order this delicious selection!</i></p>
+                            <p>Burgers, BBQ, Chinese, Thai, Asian</p>
+                            <p><img src="img/price_tag.png"> £ 200 Minimum order</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+    </header>
+    
+    <div class="breadcrumb-div">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-sm-12 no-padding-left">
+                	<ul class="breadcrumb">
+                    	<li><a href="#">Home</a></li>
+                        <li><a href="#">Caterers</a></li>
+                        <li><a href="#" class="active">Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- /.navbar-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- menus and filters-->
+          <div class="panel panel-default sidebar-menu">
+            <div class="panel-heading">
+              <h3 class="panel-title">Filter Cuisine</h3>
+            </div>
+            <div class="panel-body">
+              <ul class="nav nav-pills left-filter-cuisine">
+                <li>
+                	<a href="#">Starters</a>
+                </li>
+                <li>
+                	<a href="#">Seconds</a>
+                </li>
+                <li class="active">
+                	<a href="#">Packs</a>
+                </li>
+                <li>
+                	<a href="#">Appetizers</a>
+                </li>
+                <li>
+                	<a href="#">Soups and salads</a>
+                </li>
+                <li>
+                	<a href="#">Pasta</a>
+                </li>
+                <li>
+                	<a href="#">Seafood</a>
+                </li>
+                <li>
+                	<a href="#">Beverages</a>
+                </li>
+                <li>
+                	<a href="#">Cakes</a>
+                </li>
+                <li>
+                	<a href="#">Juices & Smoothies</a>
+                </li>
+                <li>
+                	<a href="#">Fruit & Fruit Salads</a>
+                </li>
+                <li>
+                	<a href="#">Soft Drinks</a>
+                </li>
+                <li>
+                	<a href="#">Salads</a>
+                </li>
+                <li>
+                	<a href="#">Sandwiches</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          
+          <!-- /menus and filters-->
+          
+        </div>
+        
+        <div class="col-md-6">
+          <div class="row products">
+             <div class="panel-group" id="accordion">
+                  <div class="panel panel-default dishes-list-panel">
+                    <div class="panel-heading dishes-list-title">
+                      <h4 class="panel-title">
+                      	<span>Sushi</span>
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                          <i class="indicator fa fa-angle-down  pull-right"></i>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                      <div class="panel-body">
+						<div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                        <div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img1.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                        <div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img2.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                        <div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img3.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                        <div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default dishes-list-panel">
+                    <div class="panel-heading dishes-list-title">
+                      <h4 class="panel-title">
+                      	<span>Salads</span>
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                          <i class="indicator fa fa-angle-down  pull-right"></i>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse in">
+                      <div class="panel-body">
+						<div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                        <div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img1.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                        <div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img2.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                        <div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img3.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                        <div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default dishes-list-panel">
+                    <div class="panel-heading dishes-list-title">
+                      <h4 class="panel-title">
+                      	<span>Pizza</span>
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                          <i class="indicator fa fa-angle-down  pull-right"></i>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                      <div class="panel-body">
+						<div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                        <div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                        <div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                        <div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                        <div class="dish-row">
+                        	<div class="dish-img">
+                        		<img src="img/dish_img.jpg">
+                            </div>
+                            <div class="dish-details">
+                                <h3>Veg Extravaganza</h3>
+                                <h3>£ 200</h3>
+                                <p>Gluten Free, Diary Free, <br> Halala, Vegetarian</p>
+                            </div>
+                            <div class="dish-addbtn">
+                                <a href="javascript:void(0)" class="btn btn-success"><span>+</span> Add</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+          </div>
+        </div>
+        
+        
+        <div class="col-sm-3 shopping-cartdiv">
+        	<div class="panel panel-default dishes-list-panel">
+                <div class="panel-heading dishes-list-title">
+                  <h4 class="panel-title text-center">
+                    <span>Your Shopping Cart</span>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <div class="Shoppingcart-row">
+                        <div class="cartdish-div">
+                        	Veg Extravaganza
+                            <a href="javascript:void(0)" class="pull-right delete-cart">
+                            	<i class="fa fa-trash"></i>
+                            </a>
+                            <div class="cart-value-box">
+                            	<div class="select-sizediv">
+                                	<select id="basic" class="selectpicker show-tick form-control">
+                                      <option>Size/sm</option>
+                                      <option>Size/md</option>
+                                      <option>Size/lg</option>
+                                    </select>
+                                </div>
+                                <div class="cart-numberdiv">
+                                	<input class="" value="1">
+                                </div>
+                                <div class="numerincres-decreasediv">
+                                	<a href="javascript:void(0)">
+                                    	<i class="fa fa-angle-up"></i>
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                    	<i class="fa fa-angle-down"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Shoppingcart-row">
+                        <div class="cartdish-div">
+                        	Veg Extravaganza
+                            <a href="javascript:void(0)" class="pull-right delete-cart">
+                            	<i class="fa fa-trash"></i>
+                            </a>
+                            <div class="cart-value-box">
+                            	<div class="select-sizediv">
+                                	<select id="basic" class="selectpicker show-tick form-control">
+                                      <option>Size/sm</option>
+                                      <option>Size/md</option>
+                                      <option>Size/lg</option>
+                                    </select>
+                                </div>
+                                <div class="cart-numberdiv">
+                                	<input class="" value="4">
+                                </div>
+                                <div class="numerincres-decreasediv">
+                                	<a href="javascript:void(0)">
+                                    	<i class="fa fa-angle-up"></i>
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                    	<i class="fa fa-angle-down"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Shoppingcart-row">
+                        <div class="cartdish-div">
+                        	Veg Extravaganza
+                            <a href="javascript:void(0)" class="pull-right delete-cart">
+                            	<i class="fa fa-trash"></i>
+                            </a>
+                            <div class="cart-value-box">
+                            	<div class="select-sizediv">
+                                	<select id="basic" class="selectpicker show-tick form-control">
+                                      <option>Size/sm</option>
+                                      <option>Size/md</option>
+                                      <option>Size/lg</option>
+                                    </select>
+                                </div>
+                                <div class="cart-numberdiv">
+                                	<input class="" value="3">
+                                </div>
+                                <div class="numerincres-decreasediv">
+                                	<a href="javascript:void(0)">
+                                    	<i class="fa fa-angle-up"></i>
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                    	<i class="fa fa-angle-down"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="total-div">
+                    	<p>Total</p>
+                        <h2>£ 200</h2>
+                        <button class="btn btn-success btn-block">CHECKOUT</button>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__block">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-md-4 col-xs-12 col-sm-12 text-left">
+              <ul>
+              	<br><br>
+                <li class="text-left"><img class="img-responsive footer-logo" src="img/footer_logo.png"></li>
+              </ul>
+            </div>
+            <div class="col-md-8 col-xs-12 col-sm-12">
+            	<div class="col-sm-4 col-xs-6">
+                  <h4>Learn More</h4>
+                  <ul>
+                    <li><a href="#">How it works?</a></li>
+                    <li><a href="#">Partner us</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Payment methods</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                  <h4>About Us</h4>
+                  <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                  <h4>Support</h4>
+                  <ul>
+                    <li><a href="#">F.A.Q.</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Live chat</a></li>
+                    <li><a href="#">Phone</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="madewith-leftfooter">Made with <i class="fa fa-heart-o"></i> in Barcelona</p>
+            </div>
+            <div class="col-md-4 no-padding-right">
+              <p class="social">
+                  <a href="#" data-animate-hover="pulse" class="external"><i class="fa fa-twitter"></i></a>
+                  <a href="#" data-animate-hover="pulse" class="external"><i class="fa fa-facebook"></i></a>
+                  <a href="#" data-animate-hover="pulse" class="external"><i class="fa fa-google-plus"></i></a>
+                  <a href="#" data-animate-hover="pulse" class="external"><i class="fa fa-tumblr"></i></a>
+                  <a href="#" data-animate-hover="pulse" class="external"><i class="fa fa-pinterest-p"></i></a>
+                  <a href="#" data-animate-hover="pulse" class="external"><i class="fa fa-linkedin"></i></a>
+              </p>
+            </div>
+            <div class="col-md-2">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/front.js"></script>
+    
+    
+    <script>
+		function toggleChevron(e) {
+			$(e.target)
+				.prev('.panel-heading')
+				.find("i.indicator")
+				.toggleClass('fa-angle-down fa-angle-up');
+		}
+		$('#accordion').on('hidden.bs.collapse', toggleChevron);
+		$('#accordion').on('shown.bs.collapse', toggleChevron);
+	</script>
+    
+    <script>
+		$('.selectpicker').selectpicker({
+  style: 'btn-info',
+  size: 4
+});
+
+	</script>
+ 
+    
+  </body>
+
+</html>
