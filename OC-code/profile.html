@@ -38,7 +38,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+                  <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
                 </div>
                 <div class="collapse navbar-collapse navbar-right-div col-sm-9" id="bs-example-navbar-collapse-1">
                 	<nav class="navbar navbar-light bg-faded">
@@ -52,11 +52,11 @@
                         <li class="nav-item">
                           <a class="nav-link" href="#">BECOME A PARTNER</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">LOGIN/SIGNUP</a>
+                        <li class="nav-item loginsignup_link">
+                          <a href="#" class="nav-link nav-link-loginlink" data-toggle="modal" data-target="#myModal" style="padding-left:0; padding-right:0; float:left;">LOGIN/</a><a class="nav-link nav-link-signuplink" href="#" data-toggle="modal" data-target="#myModal1" style="padding-left:0; padding-right:0; float:left;">SIGNUP</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">CART <img class="header-cartimg" src="img/navcart_icon.png"></a>
+                          <a class="nav-link" href="checkout.html">CART <img class="header-cartimg" src="img/navcart_icon.png"></a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#"><img class="headr-flagimg" src="img/nav_flagicon.png"></a>
@@ -112,46 +112,46 @@
             <div class="panel-body">
               <ul class="nav nav-pills left-filter-cuisine">
                 <li>
-                	<a href="#">Starters</a>
+                	<a href="#"  data-toggle="modal" data-target="#CuisineFilter">Starters</a>
                 </li>
                 <li>
-                	<a href="#">Seconds</a>
+                	<a href="#"  data-toggle="modal" data-target="#CuisineFilter">Seconds</a>
                 </li>
                 <li class="active">
-                	<a href="#">Packs</a>
+                	<a href="#"  data-toggle="modal" data-target="#CuisineFilter">Packs</a>
                 </li>
                 <li>
-                	<a href="#">Appetizers</a>
+                	<a href="#"  data-toggle="modal" data-target="#CuisineFilter">Appetizers</a>
                 </li>
                 <li>
-                	<a href="#">Soups and salads</a>
+                	<a href="#"  data-toggle="modal" data-target="#CuisineFilter">Soups and salads</a>
                 </li>
                 <li>
-                	<a href="#">Pasta</a>
+                	<a href="#"  data-toggle="modal" data-target="#CuisineFilter">Pasta</a>
                 </li>
                 <li>
-                	<a href="#">Seafood</a>
+                	<a href="#"  data-toggle="modal" data-target="#CuisineFilter">Seafood</a>
                 </li>
                 <li>
-                	<a href="#">Beverages</a>
+                	<a href="#"  data-toggle="modal" data-target="#CuisineFilter">Beverages</a>
                 </li>
                 <li>
-                	<a href="#">Cakes</a>
+                	<a href="#"  data-toggle="modal" data-target="#CuisineFilter">Cakes</a>
+                </li>
+                <li> 
+                	<a href="#"  data-toggle="modal" data-target="#CuisineFilter">Juices & Smoothies</a>
                 </li>
                 <li>
-                	<a href="#">Juices & Smoothies</a>
+                	<a href="#"  data-toggle="modal" data-target="#CuisineFilter">Fruit & Fruit Salads</a>
                 </li>
                 <li>
-                	<a href="#">Fruit & Fruit Salads</a>
+                	<a href="#"  data-toggle="modal" data-target="#CuisineFilter">Soft Drinks</a>
                 </li>
                 <li>
-                	<a href="#">Soft Drinks</a>
+                	<a href="#"  data-toggle="modal" data-target="#CuisineFilter">Salads</a>
                 </li>
                 <li>
-                	<a href="#">Salads</a>
-                </li>
-                <li>
-                	<a href="#">Sandwiches</a>
+                	<a href="#"  data-toggle="modal" data-target="#CuisineFilter">Sandwiches</a>
                 </li>
               </ul>
             </div>
@@ -578,6 +578,152 @@
         </div>
       </div>
     </footer>
+    
+    
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-md signin-popup">
+          <div class="modal-content">
+            <div class="modal-body">
+            	<h4 class="modal-title popup-heading">WELCOME BACK</h4>
+                <input class="form-control signin-input" placeholder="Email Address">
+                <input class="form-control signin-input" placeholder="Password">
+                <button type="button" class="btn btn-success btn-login btn-block">LOGIN</button>
+                <div class="col-sm-12 forgotpass-div">
+                	<a href="#" class="forgot-paslink">Forgot password?</a>
+                </div>
+            </div>
+            <div class="modal-footer signin-popup-footer">
+              	Sign up <a href="#">here</a>
+            </div>
+            </div>
+          </div>
+        </div>
+    
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog modal-md signin-popup">
+          <div class="modal-content">
+            <div class="modal-body">
+            	<h4 class="modal-title popup-heading">SiGN UP</h4>
+                <input class="form-control signin-input" placeholder="First Name">
+                <input class="form-control signin-input" placeholder="Last Name">
+                <input class="form-control signin-input" placeholder="Email">
+                <input class="form-control signin-input" placeholder="Mobile Number">
+                <input class="form-control signin-input" placeholder="Password">
+                <input class="form-control signin-input" placeholder="Re-type Password">
+                <button type="button" class="btn btn-success btn-login btn-block">SIGN UP</button>
+                
+            </div>
+            <div class="modal-footer signin-popup-footer">
+              	Sign in <a href="#">here</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    <div class="modal fade" id="CuisineFilter" role="dialog">
+        <div class="modal-dialog modal-md filter-cuisine-popup">
+          <div class="modal-content">
+          	<div class="modal-header">
+                 <div class="col-sm-6">
+                 	 <h4 class="modal-title cusine-heading">Filter Cuisine</h4>
+                 </div>
+                 <div class="col-sm-6">
+                 	<button class="btn btn-default rest-btn"><img src="img/reset_icon.png"> Reset</button>
+                 </div>
+            </div>
+            <div class="modal-body">
+            	<div class="col-sm-6 cusine-filterleftdiv">
+                	<ul class="list-unstyled">
+                    	<li>
+                    	  <input type="checkbox" id="checkbox1" name="checkbox1" />
+  						 <label for="checkbox1"><span></span>Pizza</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox2" name="checkbox2" checked />
+                             <label for="checkbox2"><span></span>Appetizers</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox3" name="checkbox3" />
+                             <label for="checkbox3"><span></span>Pizza</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox4" name="checkbox4" />
+                             <label for="checkbox4"><span></span>Pizza</label>
+                        </li>
+                        <li> 
+                            <input type="checkbox" id="checkbox6" name="checkbox6" checked />
+                             <label for="checkbox6"><span></span>Appetizers</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox7" name="checkbox7" />
+                             <label for="checkbox7"><span></span>Pizza</label>
+                        </li>
+                        <li>
+                    	  <input type="checkbox" id="checkbox9" name="checkbox9" />
+  						 <label for="checkbox9"><span></span>Pizza</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox11" name="checkbox11" checked />
+                             <label for="checkbox11"><span></span>Appetizers</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox12" name="checkbox12" />
+                             <label for="checkbox12"><span></span>Pizza</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox13" name="checkbox13" />
+                             <label for="checkbox13"><span></span>Pizza</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 cusine-filterrighgtdiv">
+                	<ul class="list-unstyled">
+                    	<li>
+                    	  <input type="checkbox" id="checkbox14" name="checkbox14" />
+  						 <label for="checkbox14"><span></span>Pizza</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox15" name="checkbox15" checked />
+                             <label for="checkbox15"><span></span>Appetizers</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox16" name="checkbox16" />
+                             <label for="checkbox16"><span></span>Pizza</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox17" name="checkbox17" />
+                             <label for="checkbox17"><span></span>Pizza</label>
+                        </li>
+                        <li> 
+                            <input type="checkbox" id="checkbox18" name="checkbox18" checked />
+                             <label for="checkbox18"><span></span>Appetizers</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox19" name="checkbox19" />
+                             <label for="checkbox19"><span></span>Pizza</label>
+                        </li>
+                        <li>
+                    	  <input type="checkbox" id="checkbox20" name="checkbox20" />
+  						 <label for="checkbox20"><span></span>Pizza</label>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="modal-footer signin-popup-footer">
+              	<div class="col-xs-6 text-left">
+                	<button class="btn btn-default cancel-btn"  data-dismiss="modal">CANCEL</button>
+                </div>
+                <div class="col-xs-6 text-right">
+                	<button class="btn btn-default apply-btn">APPLY</button>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
